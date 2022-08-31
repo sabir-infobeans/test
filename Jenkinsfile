@@ -18,7 +18,7 @@ pipeline {
 //                     echo "GIT_BRANCH: >>${GIT_BRANCH}<<"
                     prefix = "${GIT_BRANCH}"
                     prefix = prefix.replace("/", "-").replace("origin-", "")
-                    echo " ################################################################## GIT_BRANCH:${GIT_BRANCH} prefix:${prefix} current_repo_name:${current_repo_name} BUILD_NUMBER:${BUILD_NUMBER} STASH_URL:${STASH_URL} "
+                    echo " ################################################################## GIT_BRANCH:${GIT_BRANCH} prefix:${prefix} current_repo_name:${current_repo_name} BUILD_NUMBER:${BUILD_NUMBER} "
 
                 }
 
