@@ -9,9 +9,9 @@ pipeline {
     }
     stages {
         stage('Setup') {
-            environment {
-//                 GIT_CREDENTIALS = credentials('git-user-credentials-with-token')
-            }
+//             environment {
+// //                 GIT_CREDENTIALS = credentials('git-user-credentials-with-token')
+//             }
 
             steps {
                 script {
@@ -31,9 +31,9 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            //cleanup some stuff
-        }
-    }
+//     post {
+//         always {
+//             //cleanup some stuff
+//         }
+//     }
 }
