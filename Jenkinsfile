@@ -1,6 +1,7 @@
 SHOULD_BUILD = 'true'
 LIBS_CHANGED = ''
 def current_repo_name = scm.getUserRemoteConfigs()[0].getUrl().tokenize('/').last().split("\\.")[0]
+def scmUrl = scm.getUserRemoteConfigs()[0].getUrl()
 pipeline {
     agent any
     parameters {
@@ -19,6 +20,7 @@ pipeline {
                     prefix = "${GIT_BRANCH}"
                     prefix = prefix.replace("/", "-").replace("origin-", "")
                     echo " ################################################################## GIT_BRANCH:${GIT_BRANCH} prefix:${prefix} current_repo_name:${current_repo_name} BUILD_NUMBER:${BUILD_NUMBER} "
+                    echo "QQQQQQQQQQQQQQ scmUrl ${scmUrl}"
 
                 }
 
