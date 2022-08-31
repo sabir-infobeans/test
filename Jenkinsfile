@@ -14,7 +14,7 @@ pipeline {
 
       steps {
 
-        sh 'java -version'
+        sh 'echo "hello"'
 
       }
 
