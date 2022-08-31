@@ -15,10 +15,10 @@ pipeline {
 
             steps {
                 script {
-                    echo "GIT_BRANCH: >>${GIT_BRANCH}<<"
+//                     echo "GIT_BRANCH: >>${GIT_BRANCH}<<"
                     prefix = "${GIT_BRANCH}"
                     prefix = prefix.replace("/", "-").replace("origin-", "")
-                    echo "${GIT_BRANCH}  ${prefix}"
+                    echo " ##################################################################3 ${GIT_BRANCH} ${prefix} ${current_repo_name}"
 
                 }
 
