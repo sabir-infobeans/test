@@ -21,10 +21,9 @@ pipeline {
                     prefix = prefix.replace("/", "-").replace("origin-", "")
                     echo " ################################################################## GIT_BRANCH:${GIT_BRANCH} prefix:${prefix} current_repo_name:${current_repo_name} BUILD_NUMBER:${BUILD_NUMBER} "
                     echo "QQQQQQQQQQQQQQ scmUrl ${scmUrl}"
-                    dir
-
                 }
 
+                dir
                 //         sh './scripts/build.sh --build-number ${BUILD_NUMBER} setup'
                 //         sh '''
                 //         curl - H "Authorization: Bearer $GIT_CREDENTIALS_PSW" - H "Content-Type: application/json" - s[https: //$%7bSTASH_URL%7d/projects/SAN/repos/automation/raw/SANscreen/Tools/pr-default-tasks.sh?at=refs%2Fheads%2Fmaster]https://${STASH_URL}/projects/SAN/repos/automation/raw/SANscreen/Tools/pr-default-tasks.sh?at=refs%2Fheads%2Fmaster -o /tmp/pr-default-tasks.sh
