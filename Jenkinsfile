@@ -21,6 +21,7 @@ pipeline {
                     prefix = prefix.replace("/", "-").replace("origin-", "")
                     echo " ################################################################## GIT_BRANCH:${GIT_BRANCH} prefix:${prefix} current_repo_name:${current_repo_name} BUILD_NUMBER:${BUILD_NUMBER} "
                     echo "QQQQQQQQQQQQQQ scmUrl ${scmUrl}"
+                    dir
 
                 }
 
