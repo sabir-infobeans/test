@@ -23,7 +23,7 @@ pipeline {
                     echo "QQQQQQQQQQQQQQ scmUrl ${scmUrl}"
                 }
 
-                dir
+                powershell 'dir'
                 
                 //         sh './scripts/build.sh --build-number ${BUILD_NUMBER} setup'
                 //         sh '''
