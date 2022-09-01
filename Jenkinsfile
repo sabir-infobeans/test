@@ -24,6 +24,8 @@ pipeline {
                 }
 
                 powershell 'dir'
+                powershell 'type readme.md'
+                
                 
                 //         sh './scripts/build.sh --build-number ${BUILD_NUMBER} setup'
                 //         sh '''
